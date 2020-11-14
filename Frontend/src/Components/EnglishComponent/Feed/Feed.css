@@ -1,0 +1,36 @@
+.Feed {
+	width: auto;
+	height: 750px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+.Feed .createPost {
+	flex-shrink: 1;
+	flex-grow: 0;
+	display: flex;
+	margin: 30px;
+}
+
+.Feed .createPost input {
+	margin: 10px;
+	padding-left: 10px;
+	width: 700px;
+	height: 50px;
+	font-size: 20px;
+}
+
+.Feed .createPost button {
+	margin: 10px;
+	width: 90px;
+	height: 56px;
+	font-size: 20px;
+	padding: 0;
+}
