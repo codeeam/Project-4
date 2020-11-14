@@ -1,3 +1,55 @@
+* {
+  font-family: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+.App {     
+  text-align: center;
+} 
+
+.head {
+  background-color: orangered;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding: 1px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: blanchedalmond;
+}
+
+.login {
+  color: rgb(228, 150, 33);
+}
+
+.logo-cover {
+  background-color: rgba(218, 126, 65, 0.719);
+  color: blanchedalmond;
+  height: 67px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.signUp-cover {
+  background-color: rgba(218, 126, 65, 0.719);
+  color: blanchedalmond;
+  min-width: 100px;
+  padding: 0.1px;
+  min-height: 50%;
+  border-radius: 50%;
+=======
 body {
     margin: 0;
     padding: 0;
