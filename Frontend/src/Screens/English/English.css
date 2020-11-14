@@ -1,26 +1,4 @@
-.English .columns {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-		'Lucida Sans', Arial, sans-serif;
-}
 
-.English .columns .left {
-	flex-basis: 30%;
-	flex-grow: 0;
-	flex-shrink: 1;
-}
-
-.English .columns .center {
-	flex-basis: 53%;
-	flex-grow: 0;
-	flex-shrink: 1;
-}
-
-.English .columns .right {
-	flex-basis: 18%;
-	flex-grow: 0;
-	flex-shrink: 1;
+.english__body {
+  display: flex;
 }
