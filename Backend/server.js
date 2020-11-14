@@ -22,7 +22,7 @@ const io = socketio(server)
 
 io.on('connection', (socket) => {
     socket.on('join', ({ name, room}, callback) => {
-        const { error, user} = addUser({id: socket.id, name, room})
+        // const { error, user} = addUser({id: socket.id, name, room})
 
         if(error){
 console.log('error on connection')
@@ -48,7 +48,7 @@ console.log('error on connection')
     })
 
     socket.on('disconnect', () => {
-        // const user = removeUser(socket.id)
+        const user = removeUser(socket.id)
 
         if(user){
             io.to(user.room).emit('message', { user: 'admin', text: `${user.name} has left the room`})

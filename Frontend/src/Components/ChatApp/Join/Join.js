@@ -3,7 +3,7 @@ import './join.css';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 
-const join = () => {
+const Join = () => {
     const [name, setName] = useState('')
     const [room, setRoom] = useState('')
 
@@ -24,4 +24,4 @@ const join = () => {
     )
 }
 
-export default join;
+export default Join;
