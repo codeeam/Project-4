@@ -5,7 +5,23 @@ import './Languages.css';
 function Languages() {
     return (
         <Router>
-            {/* <div className="rows">
+            <h1>Languages</h1>
+        </Router>
+
+
+
+    );
+
+}
+
+export default Languages;
+
+
+
+
+
+
+{/* <div className="rows">
                 <div className="row">
                     <div className="column">
                         <div className="card">
@@ -40,18 +56,3 @@ function Languages() {
                     </div>
                 </div>
             </div> */}
-        </Router>
-
-
-
-    );
-
-}
-
-export default Languages;
-
-
-
-
-
-

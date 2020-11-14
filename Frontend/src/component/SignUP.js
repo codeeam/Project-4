@@ -6,9 +6,9 @@ function SignUP() {
 
   return (
     <Router>
-      <div>11</div>
+      <div><h1>SignUP</h1></div>
     </Router>
   )
 }
 
-export default SignUP;
+export default SignUP;   

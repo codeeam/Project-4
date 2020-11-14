@@ -8,7 +8,7 @@ function English() {
   return (
     <Router>
       <div >
-        whyyyyy
+       <h1>English</h1>
       </div>
     </Router>
   );

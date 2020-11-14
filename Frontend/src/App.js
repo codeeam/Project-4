@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom
 import SignUP from './component/SignUP'
 import English from './component/English'
 import Search from './component/Search'
-import Languages from './component/Languages'
+// import Languages from './component/Languages'
 import './App.css';
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
 
             <div className="column">
               <div className="card">
-                <h3>Card 2</h3>
+                <h3>France </h3>
                 <p>Some text</p>
                 <p>Some text</p>
               </div>
@@ -40,7 +40,7 @@ function App() {
 
             <div className="column">
               <div className="card">
-                <h3>Card 3</h3>
+                <h3>Spanish</h3>
                 <p>Some text</p>
                 <p>Some text</p>
               </div>
@@ -48,7 +48,7 @@ function App() {
 
             <div className="column">
               <div className="card">
-                <h3>Card 3</h3>
+                <h3>Turkish</h3>
                 <p>Some text</p>
                 <p>Some text</p>
               </div>
@@ -56,7 +56,7 @@ function App() {
 
             <div className="column">
               <div className="card">
-                <h3>Card 3</h3>
+                <h3>German </h3>
                 <p>Some text</p>
                 <p>Some text</p>
               </div>
@@ -64,7 +64,7 @@ function App() {
 
             <div className="column">
               <div className="card">
-                <h3>Card 4</h3>
+                <h3>Chinese</h3>
                 <p>Some text</p>
                 <p>Some text</p>
               </div>
@@ -77,7 +77,7 @@ function App() {
 
 
     </Router>
-
+ 
   );
 }
 

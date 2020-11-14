@@ -8,7 +8,7 @@ function Search() {
 
     }
 
-
+   
     const searchInput = () => {
 
     }
