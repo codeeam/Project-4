@@ -1,21 +1,23 @@
-import React from 'react'
-import './Sidebar.css'
-
+import React from 'react';
+import './Sidebar.css';
+import SidebarRow from './SidebarRow';
+import EmojiFlagsIcon from '@material-ui/icons/EmojiFlags';
+import HearingIcon from '@material-ui/icons/Hearing';
+import BookIcon from '@material-ui/icons/Book';
+import CreateIcon from '@material-ui/icons/Create';
+import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver';
 
 const Sidebar = () => {
-    return (
-        <div className='Sidebar'>
-            <div className='column'>
-                <a href='/course1'> course 1 </a>
-                <a href='/course2'> course 2 </a>
-                <a href='/course3'> course 3 </a>
-                <a href='/course4'> course 4 </a>
-                <a href='/course5'> course 5 </a>
-                <a href='/course6'> course 6 </a>
-                <a href='/course7'> course 7 </a>
-            </div>
-        </div>
-    )
-}
+	return (
+		<div className="sidebar">
+			<h1>English Courses</h1>
+			<SidebarRow Icon={EmojiFlagsIcon} title="Grammer" />
+			<SidebarRow Icon={HearingIcon} title="Listening" />
+			<SidebarRow Icon={BookIcon} title="Reading" />
+			<SidebarRow Icon={CreateIcon} title="Writing" />
+			<SidebarRow Icon={RecordVoiceOverIcon} title="Speaking" />
+		</div>
+	);
+};
 
-export default Sidebar
+export default Sidebar;
