@@ -1,14 +1,27 @@
 import React from 'react';
-import './Feed.css';
+import MessageSender from './MessageSender';
+import Post from './Post';
 
 const Feed = () => {
 	return (
-		<div className="Feed">
-			<div className="createPost">
-				<input type="text" placeholder="Write your post here ...." />
-				<button>Post</button>
-			</div>
-			<div className="post"></div>
+		<div className="feed">
+			<MessageSender />
+			<Post
+				message="Hello Wolrd"
+				timestamp="1601493943737"
+				imgName="imgName"
+				username="Mohammed"
+			/>
+
+			{/*{postsData.map((entry) => (
+				<Post
+					profilePic={entry.avatar}
+					message={entry.text}
+					timestamp={entry.timestamp}
+					imgName={entry.imgName}
+					userName={entry.user}
+				/>
+            ))}*/}
 		</div>
 	);
 };

@@ -1,26 +1,4 @@
-.Sidebar {
-    width: auto;
-    height: 750px;
-    border-right: 1px solid black;
-    box-sizing: border-box;    
-    margin-left: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.Sidebar .column {
-    margin-right: 100px;
-    margin-top: 100px;
-    font-size: 25px;
-    color: black;
-}
-
-.Sidebar .column a {
-    display: block;
-    margin-top: 30px;
-    text-decoration: none;
-    color: black;
+.sidebar {
+	padding: 15px 25px 15px 30px;
+	flex: 0.4;
 }
