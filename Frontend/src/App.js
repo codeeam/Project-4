@@ -13,7 +13,7 @@ function App() {
 			<English />
 		</div>,
 		<Router>
-        <Route path="/" exact component={Join}></Route>
+        <Route path="/joinChat" exact component={Join}></Route>
         <Route path="/chat" component={Chat}></Route>
     </Router>
 
