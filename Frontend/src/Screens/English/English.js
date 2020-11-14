@@ -7,12 +7,11 @@ import Sidebar from './../../Components/EnglishComponent/Sidebar/Sidebar';
 
 const English = () => {
 	return (
-		<div className="English">
+		<div className="english">
 			<Navbar />
-			<div className="columns">
-				<Sidebar className="left" />
-				<Feed className="center" />
-				<div className="right"></div>
+			<div className="english__body">
+				<Sidebar />
+				<Feed />
 			</div>
 		</div>
 	);
