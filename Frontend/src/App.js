@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import SignUP from './component/SignUP'
-import English from './component/English'
+import English from './Screens/English/English'
 import Search from './component/Search'
 // import Languages from './component/Languages'
 
 
 import './App.css';
-import English from './Screens/English/English';
 import Join from './Components/ChatApp/Join/Join'
 import Chat from './Components/ChatApp/Chat/chat'
 
@@ -78,23 +77,19 @@ function App() {
           </div>
         </div>
       </Route>
-      <Route exact path="/english" component={English} />
+      {/* <Route exact path="/english" component={English} /> */}
       <Route exact path="/SignUP" component={SignUP} />
-
-
+      <Route path="/english" exact component={English}></Route>
+      <Route path="/joinChat" exact component={Join}></Route>
+      <Route path="/chat" component={Chat}></Route>
     </Router>
- 
+
+
+
   );
-	return (
-		
-		<Router>
-			<Route path="/" exact component={English}></Route>
-			<Route path="/joinChat" exact component={Join}></Route>
-			<Route path="/chat" component={Chat}></Route>
-		</Router>
 
 
-	);
+
 }
 
 export default App;
