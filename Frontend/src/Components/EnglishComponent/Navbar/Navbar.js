@@ -12,7 +12,7 @@ const Navbar = () => {
 	return (
 		<div className="header">
 			<div className="header__left">
-                <TranslateIcon style={{fontSize: 50}}/>
+				<TranslateIcon style={{ fontSize: 50, color: '#2e81f4'}} />
 			</div>
 			<div className="header__center">
 				<div className="header__input">
@@ -27,10 +27,6 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div className="header__right">
-				<div className="header__info">
-					<Avatar />
-					<h4>Username</h4>
-				</div>
 				<IconButton>
 					<NotificationsActiveIcon />
 				</IconButton>
