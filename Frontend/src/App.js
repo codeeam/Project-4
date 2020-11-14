@@ -5,7 +5,13 @@ import SignUP from './component/SignUP'
 import English from './component/English'
 import Search from './component/Search'
 // import Languages from './component/Languages'
+
+
 import './App.css';
+import English from './Screens/English/English';
+import Join from './Components/ChatApp/Join/Join'
+import Chat from './Components/ChatApp/Chat/chat'
+
 
 function App() {
   useEffect(() => {
@@ -79,6 +85,16 @@ function App() {
     </Router>
  
   );
+	return (
+		
+		<Router>
+			<Route path="/" exact component={English}></Route>
+			<Route path="/joinChat" exact component={Join}></Route>
+			<Route path="/chat" component={Chat}></Route>
+		</Router>
+
+
+	);
 }
 
 export default App;

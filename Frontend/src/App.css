@@ -49,4 +49,8 @@
   padding: 0.1px;
   min-height: 50%;
   border-radius: 50%;
+=======
+body {
+    margin: 0;
+    padding: 0;
 }
