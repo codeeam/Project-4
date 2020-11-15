@@ -113,3 +113,8 @@ body {
 .bottom .contact-us{
   padding-left: 20px;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}

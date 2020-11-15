@@ -8,7 +8,7 @@ import { Avatar, IconButton } from '@material-ui/core';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const Navbar = () => {
+const navbar = () => {
 	return (
 		<div className="header">
 			<div className="header__left">
@@ -29,4 +29,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default navbar;

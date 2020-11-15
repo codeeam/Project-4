@@ -80,6 +80,7 @@ function App() {
           </div>
         </div>
       </Route>
+
       <Route exact path="/aboutUs" component={About}/>
       <Route exact path="/contactUs" component={Contact}/>
       <Route exact path="/english" component={English}/>
@@ -88,6 +89,7 @@ function App() {
     </Router>
 
   );
+   
 }
 
 export default App;
