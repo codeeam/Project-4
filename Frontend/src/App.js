@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom
 import English from './Screens/English/English'
 import Navbar from './component/NavbarAfterLogin/Navbar'
 import './App.css';
+
 import Login from './component/NavbarAfterLogin/Login';
 import signup from './component/NavbarAfterLogin/Signup'
 import Join from './Components/ChatApp/Join/Join'
@@ -87,7 +88,7 @@ function App() {
         </div>
       </Route>
       <Route  path="/login" exact component={Login} />
-      <Route path ="/signup" component={SignUP}/>
+      <Route path ="/signup" component={signup}/>
       <Route exact path="/aboutUs" component={About}/>
       <Route exact path="/contactUs" component={Contact}/>
       <Route exact path="/english" component={English}/>

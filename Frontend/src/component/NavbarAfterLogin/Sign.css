@@ -57,6 +57,21 @@
     transition: all 250ms ease-in-out;
     cursor: pointer;
 }
+.signup{
+ display: flex;
+ justify-content: center;
+ margin-top: 30px;
+ font-weight: bold;
+ font-size: medium;
+ box-shadow: #2386c8;
+ 
+}
+.signup :hover{
+    background-color: #2386c8;
+    box-shadow: #2386c8;
+
+}
+
 .btn :focus{
     outline: none;
 

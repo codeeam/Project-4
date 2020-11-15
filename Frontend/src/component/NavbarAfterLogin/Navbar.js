@@ -20,7 +20,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				{/* <div className="header__right">
-					<Link to="/signup" style={{ textDecoration: 'none' }}><div className="signUp-cover"><h2 className="signUP">SignIn</h2></div></Link>
+					<Link to="/SignUP" style={{ textDecoration: 'none' }}><div className="signUp-cover"><h2 className="signUP">SignOut</h2></div></Link>
 				</div> */}
 			</div>
 			<Route  path="/login" exact component={Login} />
