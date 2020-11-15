@@ -4,10 +4,13 @@ import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom
 import English from './Screens/English/English'
 import Navbar from './component/NavbarAfterLogin/Navbar'
 import './App.css';
+import Login from './component/NavbarAfterLogin/Login';
+import signup from './component/NavbarAfterLogin/Signup'
 import Join from './Components/ChatApp/Join/Join'
 import Chat from './Components/ChatApp/Chat/chat'
 import About from './component/AboutUs/About'
 import Contact from './component/AboutUs/Contact'
+import SignUP from './component/NavbarAfterLogin/Signup';
 
 
 function App() {
@@ -77,10 +80,14 @@ function App() {
               <div className="about-us"><Link to="/aboutUs" style={{ textDecoration: 'none' }}><h3>About Us</h3></Link></div>
               <div className="contact-us"><Link to="/contactUs" style={{ textDecoration: 'none' }}><h3>Contact Us</h3></Link> </div>
             </div>
+            <div className="header__right">
+					<Link to="/login" style={{ textDecoration: 'none' }}><div className="signUp-cover"><h2 className="signUP">SignIn</h2></div></Link>
+				</div>
           </div>
         </div>
       </Route>
-
+      <Route  path="/login" exact component={Login} />
+      <Route path ="/signup" component={SignUP}/>
       <Route exact path="/aboutUs" component={About}/>
       <Route exact path="/contactUs" component={Contact}/>
       <Route exact path="/english" component={English}/>

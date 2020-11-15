@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
-import SignUP from '../SignUP';
+import Login from './Login';
 import './Navbar.css';
 import TranslateIcon from '@material-ui/icons/Translate';
 import SearchIcon from '@material-ui/icons/Search';
@@ -19,11 +19,11 @@ const Navbar = () => {
 						<input placeholder="Search" type="text" />
 					</div>
 				</div>
-				<div className="header__right">
-					<Link to="/SignUP" style={{ textDecoration: 'none' }}><div className="signUp-cover"><h2 className="signUP">SignOut</h2></div></Link>
-				</div>
+				{/* <div className="header__right">
+					<Link to="/signup" style={{ textDecoration: 'none' }}><div className="signUp-cover"><h2 className="signUP">SignIn</h2></div></Link>
+				</div> */}
 			</div>
-			<Route  path="/SignUP" exact component={SignUP} />
+			<Route  path="/login" exact component={Login} />
 		</Router>
 	);
 };
