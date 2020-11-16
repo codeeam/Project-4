@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
-import English from './Screens/English/English'
-import Navbar from './component/NavbarAfterLogin/Navbar'
 import './App.css';
 
-import Login from './component/NavbarAfterLogin/Login';
-import signup from './component/NavbarAfterLogin/Signup'
+import English from './Screens/English/English'
+import Navbar from './Components/Languages/Navbar'
+import Login from './Components/Login/Login';
+import signup from './Components/SignUp/Signup'
 import Join from './Components/ChatApp/Join/Join'
 import Chat from './Components/ChatApp/Chat/chat'
-import About from './component/AboutUs/About'
-import Contact from './component/AboutUs/Contact'
-import SignUP from './component/NavbarAfterLogin/Signup';
+import About from './Components/AboutUs/About'
+import Contact from './Components/ContactUs/Contact'
 
 
 function App() {
