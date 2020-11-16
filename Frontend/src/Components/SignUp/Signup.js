@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './Sign.css'
-import Languages from './../Languages/Languages'
 
 
 
