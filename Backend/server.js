@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Start chat Sevrer
-const chatrouter = require('./Routers/chatRouter');
+const chatrouter = require('./Routers/Chat/chatRouter');
 
 app.use(chatrouter)
 const PORT = 5000;
@@ -25,7 +25,7 @@ io.on('connection', (socket) => {
         // const { error, user} = addUser({id: socket.id, name, room})
 
         if(error){
-console.log('error on connection')
+                console.log('error on connection')
             return callback(error)
         } 
 
