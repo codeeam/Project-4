@@ -1,0 +1,35 @@
+.column .card h3 {
+	color: #2e81f4;
+}
+
+.column {
+	float: left;
+	min-width: 30%;
+	padding: 10px;
+}
+
+.row {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: -5px;
+	padding-left: 8%;
+	padding-top: 3%;
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+.card {
+	box-shadow: 0 8px 8px 0px rgba(80, 65, 212, 0.664);
+	padding: 16px;
+	height: 100%;
+	text-align: center;
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+}
+
+

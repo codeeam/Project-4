@@ -1,122 +1,21 @@
 * {
-  font-family: inherit;
-}
-body {
-    margin: 0;
-    padding: 0;
-}
-@media screen and (max-width: 600px) {
-  .App {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-}
-.column .card h3{
-  color: rgb(29, 114, 231);
-}
-.App {     
-  text-align: center;
-} 
-
- .signUP {
- color: rgb(46, 129, 244);
-  
- } 
-
-.logo-cover {
-  color: blanchedalmond;
-  height: 67px;
-  width: 60px;
-  border-radius: 50%;
-}
-
-.signUp-cover {
-  color: blanchedalmond;
-  min-width: 100px;
-  padding: 0.5px;
-  min-height: 20%;
-  border-radius: 50%;
-
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.row {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.column {
-  float: left;
-  min-width: 30%;
-  padding: 10px;
-  
-}
-
-.row {    
-  margin: -5px;
-  padding-left: 8% ;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-  }
-}
-
-.card {
-  box-shadow: 0 8px 8px 0px rgba(80, 65, 212, 0.664);
-  padding: 16px;
-  height: 100%;
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-}
-
-.row {
-  padding-top: 3%;
-} 
-
-
-/* .endbar .sticky{
-  background-color: black;
-  display: flex;
-  align-items: flex-end;
-  position: sticky;
-} */
-
-.bottom-stuff {
-  position: relative;
-}
-
-.bottom{
-  position: fixed; 
-  background:rgb(245, 244, 244); 
-  color: rgb(35, 122, 243);
-  width:100%;
-  bottom:0;
-  height:70px;
-  display: flex;
-  justify-content: center;
-  z-index: 100;
-  box-shadow: 8px 6px 6px 6px rgba(80, 65, 212, 0.664);
-  padding-top: 9px;
-}
-
-
-.bottom .about-us{
-  padding-right: 10%;
-}
-
-
-.bottom .contact-us{
-  padding-left: 20px;
+	font-family: inherit;
+	box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
+
+@media screen and (max-width: 600px) {
+	.App {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+.App {
+	text-align: center;
+}
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Login from './../Login/Login'
-import './Navbar.css';
+import './Navbar.css'
+import Login from './../../Login/Login'
 import TranslateIcon from '@material-ui/icons/Translate';
 import SearchIcon from '@material-ui/icons/Search';
 

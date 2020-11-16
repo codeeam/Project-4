@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Navbar from './Navbar/Navbar'
 
 
 
@@ -9,7 +8,7 @@ function Login() {
   return (
     <div>
 
-      <Navbar />
+      {/* <Navbar /> */}
     
     <div>
     <div className="contenar"> 
