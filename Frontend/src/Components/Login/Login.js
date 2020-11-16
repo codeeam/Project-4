@@ -1,11 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Signup from './../SignUp/Signup'
+import Navbar from './Navbar/Navbar'
+
 
 
 function Login() {
 
   return (
+    <div>
+
+      <Navbar />
+    
     <div>
     <div className="contenar"> 
     <div className="header">
@@ -29,19 +34,15 @@ function Login() {
     </div>
 
     <div className="footer">
-    <button className="btn">Login</button>
+    <Link className='Languages' to ='/Languages'> Login</Link>
+
     </div>
-    
+    <Link className='signup' to ='/signup'> Create new Account</Link>
 </div>
-<Router>
-    <Route path='/signup'>
-        <Signup/>
-    </Route>
 
-</Router>
-<Link className='signup' to ='/signup'> Create new Account</Link>
-
-</div>
+      </div>
+      
+      </div>
   )
 }
 
