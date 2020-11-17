@@ -8,8 +8,7 @@ import Footer from './../../Components/EnglishComponent/Footer/Footer';
 
 
 const English = () => {
-	return (
-		<Router>	
+	return (	
 			<div className="english">
 				<Navbar />
 				<div className="english__body">
@@ -18,7 +17,6 @@ const English = () => {
 				</div>
 				<Footer />
 			</div>	
-		</Router>
 	);
 };
 
