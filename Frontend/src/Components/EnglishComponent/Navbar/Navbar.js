@@ -4,15 +4,22 @@ import TranslateIcon from '@material-ui/icons/Translate';
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
-import { Avatar, IconButton } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ChatIcon from '@material-ui/icons/Chat';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+
 
 const Navbar = () => {
+	// const chatBoutton = () => { }
 	return (
 		<div className="header">
 			<div className="header__left">
-				<TranslateIcon style={{ fontSize: 50, color: '#2e81f4' }} />
+				<Link to='/Languages'>
+					<TranslateIcon style={{ fontSize: 50, color: '#2e81f4' }} />
+				</Link>
 			</div>
 			<div className="header__center">
 				<div className="header__input">
@@ -20,7 +27,9 @@ const Navbar = () => {
 					<input placeholder="Search" type="text" />
 				</div>
 				<div className="header__option">
-					<HomeIcon fontSize="large" />
+					<Link to='/Languages'>
+						<HomeIcon fontSize="large" style={{ color: '#2e81f4' }} />
+					</Link>
 				</div>
 				<div className="header__option">
 					<SupervisedUserCircleIcon fontSize="large" />
@@ -34,7 +43,16 @@ const Navbar = () => {
 					<ExpandMoreIcon />
 				</IconButton>
 			</div>
+
+
+			<Link to="/joinChat">
+				<IconButton>
+					<ChatIcon fontSize="large" style={{ color: '#2e81f4' }} />
+				</IconButton>
+			</Link>
+
 		</div>
+
 	);
 };
 
