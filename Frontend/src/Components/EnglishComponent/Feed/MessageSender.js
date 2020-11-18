@@ -9,7 +9,7 @@ import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 
 
 
-const MessageSender = ({ username, timestamp, message }) => {
+const MessageSender = ({ username, timestamp }) => {
 	const [rb, setRb] = useState('');
 	const [rbList, setRbList] = useState([])
 
@@ -23,6 +23,15 @@ const MessageSender = ({ username, timestamp, message }) => {
 			{ rb: rb }
 		)
 	};
+	const likePost = (id) => {
+		Axios.post("http://localhost:3000/Languages/English/api/like",
+			{
+				userLikeing: localStorage.getItem("username"),
+				postid: id
+			}).then((response) => {
+				// console.log(response)
+			});
+	}
 
 	return (
 		<div>
@@ -62,9 +71,15 @@ const MessageSender = ({ username, timestamp, message }) => {
 							{/*image is coming later*/}
 						</div>
 						<div className="post__options">
-							<div className="post__option">
-								<ThumbUpIcon />
-								<p>Like</p>
+							<div onClick={() => {
+								likePost(val.id);
+							}} className="post__option">
+								<ThumbUpIcon
+									id="likeButton"
+
+								/>
+
+								<p> {val.likes} </p>
 							</div>
 
 
