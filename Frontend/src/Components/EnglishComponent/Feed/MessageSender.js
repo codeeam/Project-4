@@ -50,7 +50,7 @@ const MessageSender = ({ username, timestamp }) => {
 
 						/>
 					</form>
-					
+
 					<IconButton onClick={postReq}>
 						<PostAddIcon fontSize='large'
 						/>
@@ -93,17 +93,10 @@ const MessageSender = ({ username, timestamp }) => {
 								<p>Comment</p>
 							</div>
 
-
-
 						</div>
 					</div>
-
 				})
 			}
-
-
-
-
 		</div>
 	);
 }
