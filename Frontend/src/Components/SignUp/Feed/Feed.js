@@ -38,10 +38,7 @@ const Feed = () =>
                     </div>
                 </div>
             </div>
-            { <button onClick={register}> Create new Account </button> ?
-                <Link className='Languages' to='/Languages'>Register</Link> :
-                console.log("faild")
-            }
+            <Link className='Languages' to='/Languages'>Register</Link> 
         </div>
     
     );

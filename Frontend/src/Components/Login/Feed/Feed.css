@@ -49,3 +49,23 @@
 	transition: all 250ms ease-in-out;
 }
 
+.Languages {
+	font-weight: bold;
+	color: gray;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+.signup {
+	font-weight: bold;
+	color: gray;
+	text-decoration: none;
+}
+
+.Languages:hover {
+	color: #2e81f4;
+}
+
+.signup:hover {
+	color: #2e81f4;
+}
