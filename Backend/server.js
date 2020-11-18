@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const session = require('express-session');
+// const session = require('express-session');
 require('dotenv').config();
 //Server Chat
 const socketio = require('socket.io')
@@ -11,6 +11,7 @@ const http = require('http')
 
 const loginRouter = require('./Routers/Login/loginRoute');
 const signUpRouter = require('./Routers/SignUp/signUpRoute');
+const contactRouter=require('./Routers/Contact/ContactRoute')
 
 const mysql = require('./database');
 
@@ -23,21 +24,24 @@ app.use(cors({
 }));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(session({
-  key: process.env.sessionKey,
-  secret: process.env.sessionSrcret,
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
-    expires: 60*60*24,
-  }
-}))
+// app.use(session({
+//   key: process.env.sessionKey,
+//   secret: process.env.sessionSrcret,
+//   resave: false,
+//   saveUninitialized: false,
+//   cookie: {
+//     expires: 60*60*24,
+//   }
+// }))
 app.use(loginRouter);
 app.use(signUpRouter);
+app.use(contactRouter)
 
 
 // Start chat Sevrer
 const chatrouter = require('./Routers/Chat/chatRouter');
+
+
 
 app.use(chatrouter)
 const PORT = process.env.PORT;
