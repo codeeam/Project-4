@@ -67,8 +67,6 @@ const Feed = () =>
                     </div>
                 </div>
             </div>
-
-            <button onClick={login}> Login </button>
             <Link className='Languages' to='/Languages'> Login </Link> 
             <Link className='signup' to='/signup'> Create new Account</Link>
         </div>
