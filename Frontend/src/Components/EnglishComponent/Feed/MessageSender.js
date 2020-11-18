@@ -1,10 +1,11 @@
-import { Avatar } from '@material-ui/core';
+import { Avatar, IconButton } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import './MessageSender.css';
 import Axios from 'axios'
 import './Post.css';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
+import PostAddIcon from '@material-ui/icons/PostAdd';
 
 
 
@@ -49,7 +50,11 @@ const MessageSender = ({ username, timestamp }) => {
 
 						/>
 					</form>
-					<button onClick={postReq}>Post</button>
+					
+					<IconButton onClick={postReq}>
+						<PostAddIcon fontSize='large'
+						/>
+					</IconButton>
 				</div>
 			</div>
 
