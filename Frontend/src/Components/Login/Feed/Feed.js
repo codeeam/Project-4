@@ -67,7 +67,6 @@ const Feed = () =>
                     </div>
                 </div>
             </div>
-
             <Link className='Languages' to='/Languages'> Login </Link> 
             <Link className='signup' to='/signup'> Create new Account</Link>
         </div>
