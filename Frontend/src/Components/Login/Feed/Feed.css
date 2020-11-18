@@ -51,16 +51,16 @@
 }
 
 .Languages {
-	text-decoration: none;
-	color: gray;
 	font-weight: bold;
+	color: gray;
+	text-decoration: none;
 	margin-bottom: 20px;
 }
 
 .signup {
-	text-decoration: none;
-	color: gray;
 	font-weight: bold;
+	color: gray;
+	text-decoration: none;
 }
 
 .Languages:hover {

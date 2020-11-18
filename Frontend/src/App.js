@@ -1,15 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Languages from './Screens/Languages/Languages'
 import English from './Screens/English/English'
-
-
 import Login from './Screens/Login/Login';
 import SignUp from './Screens/SignUp/SignUp'
 import Join from './Components/ChatApp/Join/Join'
 import Chat from './Components/ChatApp/Chat/chat'
-import About from './Components/AboutUs/About'
+import About from './Screens/AboutUs/About'
 import Contact from './Components/ContactUs/Contact'
 
 

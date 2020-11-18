@@ -38,7 +38,7 @@ const Feed = () =>
                     </div>
                 </div>
             </div>
-            <Link className='Languages' to='/Languages'>Register</Link>
+            <Link className='Languages' to='/Languages'>Register</Link> 
         </div>
     
     );
