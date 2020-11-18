@@ -3,8 +3,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    color: #2e81f4;
-    margin-top: 100px;
+	color: #2e81f4;
+	margin-top: 100px;
 }
 
 .head {
@@ -48,3 +48,4 @@
 	margin-bottom: 31px;
 	transition: all 250ms ease-in-out;
 }
+
