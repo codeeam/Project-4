@@ -12,7 +12,7 @@ function InfoBar({ room }) {
                 <h3>{ room }</h3>
             </div>
             <div className="rightInnerContainer">
-                <a href="/"><img src={closeIcon} alt="clode icon"/></a>
+                <a href="/Languages/English"><img src={closeIcon} alt="clode icon"/></a>
             </div>
         </div>
     )

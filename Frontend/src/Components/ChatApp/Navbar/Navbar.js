@@ -7,12 +7,16 @@ import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import { Avatar, IconButton } from '@material-ui/core';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 
 const navbar = () => {
 	return (
 		<div className="header">
 			<div className="header__left">
-				<TranslateIcon style={{ fontSize: 50, color: '#2e81f4' }} />
+				<Link to='/Languages'>
+					<TranslateIcon style={{ fontSize: 50, color: '#2e81f4' }} />
+				</Link>
 			</div>
 			<div className="header__center">
 				<div><h1>Starting your Chat</h1></div>
