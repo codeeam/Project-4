@@ -7,6 +7,7 @@ import { IconButton } from '@material-ui/core';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ChatIcon from '@material-ui/icons/Chat';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -28,22 +29,24 @@ const Navbar = () => {
 						<HomeIcon fontSize="large" style={{ color: '#2e81f4' }} />
 					</Link>
 				</div>
+				<Link to="/joinChat">
+					<IconButton>
+						<ChatIcon fontSize="large" style={{ color: '#2e81f4' }} />
+					</IconButton>
+				</Link>
 			</div>
 			<div className="header__right">
-				<IconButton>
-					<NotificationsActiveIcon />
-				</IconButton>
-				<IconButton>
-					<ExpandMoreIcon />
-				</IconButton>
+
+				<Link to="/">
+					<IconButton>
+
+						<ExitToAppIcon fontSize="large" style={{ color: '#2e81f4' }} />
+					</IconButton>
+				</Link>
 			</div>
 
 
-			<Link to="/joinChat">
-				<IconButton>
-					<ChatIcon fontSize="large" style={{ color: '#2e81f4' }} />
-				</IconButton>
-			</Link>
+
 
 		</div>
 
