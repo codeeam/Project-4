@@ -43,3 +43,8 @@
 .messageSender__input {
   flex: 1;
 }
+.deleteOutlineIcon {
+  display: flex;
+  justify-content: flex-end;
+  left: 200px;
+}

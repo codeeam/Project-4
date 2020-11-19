@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Languages from './Screens/Languages/Languages'
 import English from './Screens/English/English'
+import Grammer from './Components/EnglishComponent/Navbar/EnglishCourses/Grammer/Grammer'
+import Listening from './Components/EnglishComponent/Navbar/EnglishCourses/Listening/Listening'
+
 import Login from './Screens/Login/Login';
 import SignUp from './Screens/SignUp/SignUp'
 import Join from './Components/ChatApp/Join/Join'
@@ -20,6 +23,9 @@ function App() {
       <Route path="/contactUs" exact component={Contact} />
       <Route path="/" exact component={Login} />
       <Route path="/signup" exact component={SignUp} />
+      <Route path="/grammer" exact component={Grammer}/>
+      <Route path="/listening" exact component={Listening}/>
+
       <Route path="/joinChat" exact component={Join} />
       <Route path="/chat" component={Chat} />
     </Router>

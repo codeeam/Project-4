@@ -12,6 +12,7 @@ const loginRouter = require('./Routers/Login/loginRoute');
 const signUpRouter = require('./Routers/SignUp/signUpRoute');
 const postRouters = require('./Routers/Post/RouterPost')
 const routerLike = require('./Routers/Post/RouterLike');
+const contactRouter =require('./Routers/Contact/ContactRouter')
 
 const mysql = require('./database');
 
@@ -23,6 +24,11 @@ app.use(cors({
     credentials: true
 }));
 app.use(express.json());
+app.use(cors({
+    origin: ["http://localhost:3001"],
+    methods: ['GET', 'POST'],
+    credentials: true
+}));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(session({
@@ -38,6 +44,7 @@ app.use(loginRouter);
 app.use(signUpRouter);
 app.use(postRouters);
 app.use(routerLike)
+app.use(contactRouter)
 
 // Start chat Sevrer
 const chatrouter = require('./Routers/Chat/chatRouter');

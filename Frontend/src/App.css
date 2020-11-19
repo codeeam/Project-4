@@ -1,6 +1,6 @@
 * {
-	font-family: inherit;
-	box-sizing: border-box;
+  font-family: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,13 +10,12 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-	.App {
-		width: 100%;
-		margin-bottom: 20px;
-	}
+  .App {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .App {
-	text-align: center;
+  text-align: center;
 }
-
