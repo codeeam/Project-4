@@ -4,9 +4,9 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #f1f2f5;
+	margin: 0;
+	padding: 0;
+	background-color: #f1f2f5;
 }
 
 @media screen and (max-width: 600px) {

@@ -5,9 +5,11 @@ import Axios from 'axios'
 import './Post.css';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
+import PostAddIcon from '@material-ui/icons/PostAdd';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import PostAddIcon from '@material-ui/icons/PostAdd';
+
 
 const MessageSender = ({ username, timestamp }) => {
 	const [rb, setRb] = useState('');
@@ -50,8 +52,7 @@ const MessageSender = ({ username, timestamp }) => {
 							onChange={(e) => setRb(e.target.value)}
 						/>
 					</form>
-					{/* <button > </button> */}
-					<IconButton>
+					<IconButton onClick={postReq}>
 						<PostAddIcon fontSize='large' onClick={postReq} />
 					</IconButton>
 				</div>

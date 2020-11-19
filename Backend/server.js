@@ -17,6 +17,12 @@ const contactRouter =require('./Routers/Contact/ContactRouter')
 const mysql = require('./database');
 
 const app = express();
+
+app.use(cors({
+    origin: ["http://localhost:3001"],
+    methods: ['GET', 'POST'],
+    credentials: true
+}));
 app.use(express.json());
 app.use(cors({
     origin: ["http://localhost:3001"],
