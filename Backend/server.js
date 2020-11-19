@@ -12,6 +12,7 @@ const loginRouter = require('./Routers/Login/loginRoute');
 const signUpRouter = require('./Routers/SignUp/signUpRoute');
 const postRouters = require('./Routers/Post/RouterPost')
 const routerLike = require('./Routers/Post/RouterLike');
+const contactRouter =require('./Routers/Contact/ContactRouter')
 
 const mysql = require('./database');
 
@@ -37,6 +38,7 @@ app.use(loginRouter);
 app.use(signUpRouter);
 app.use(postRouters);
 app.use(routerLike)
+app.use(contactRouter)
 
 // Start chat Sevrer
 const chatrouter = require('./Routers/Chat/chatRouter');
