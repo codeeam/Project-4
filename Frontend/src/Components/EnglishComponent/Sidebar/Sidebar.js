@@ -14,7 +14,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <h1>English Courses</h1>
 	  <Link to="/grammer" style={{ textDecoration: 'none' ,color: "black" }}><SidebarRow Icon={EmojiFlagsIcon} title="Grammer"/></Link>
-      <SidebarRow Icon={HearingIcon} title="Listening" />
+	  <Link to="/listening" style={{ textDecoration: 'none' ,color: "black" }}><SidebarRow Icon={HearingIcon} title="Listening" /></Link>
       <SidebarRow Icon={BookIcon} title="Reading" />
       <SidebarRow Icon={CreateIcon} title="Writing" />
       <SidebarRow Icon={RecordVoiceOverIcon} title="Speaking" />

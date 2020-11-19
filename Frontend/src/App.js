@@ -25,9 +25,8 @@ function App() {
       <Route path="/signup" exact component={SignUp} />
       <Route path="/grammer" exact component={Grammer}/>
       <Route path="/listening" exact component={Listening}/>
-
       <Route path="/joinChat" exact component={Join} />
-      <Route path="/chat" component={Chat} 
+      <Route path="/chat" component={Chat} />
     </Router>
   );
 }
