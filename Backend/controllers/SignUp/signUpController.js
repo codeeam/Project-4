@@ -8,7 +8,7 @@ exports.register = (req, res) =>
 
   bcrypt.hash(password, Number(process.env.SALT), (err, hash) =>
   {
-    db.query('INSERT INTO users (username, password) VALUES (?,?)', [username, hash], (err, result) =>
+    db.query('INSERT INTO user (username, password) VALUES (?,?)', [username, hash], (err, result) =>
     {
       if (err) {
         console.log(err);
