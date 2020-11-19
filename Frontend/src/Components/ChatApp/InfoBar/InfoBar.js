@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './InfoBar.css'
 import onLineIcon from '../Icons/onlineIcon.png'
 import closeIcon from '../Icons/closeIcon.png'

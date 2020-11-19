@@ -6,18 +6,18 @@ import Footer from './../../Components/Languages/Footer/Footer'
 
 function App() {
   return (
-        <div className="App">
-          <div className="head">
-            <Navbar />
-          </div>
-          <div className="row">
-            <Feed />
-          </div>
-          <div className="bottom-stuff">
-            <Footer/>
-          </div>
-        </div>
-  ); 
+    <div className="App">
+      <div className="head">
+        <Navbar />
+      </div>
+      <div className="row">
+        <Feed />
+      </div>
+      <div className="bottom-stuff">
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 

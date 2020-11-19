@@ -2,14 +2,11 @@ const express = require('express');
 const Routers = express.Router()
 const db = require('../../database');
 
-
 Routers.get('/Languages/English/api/get', (req, res) => {
     db.query('SELECT * FROM posts', (err, result) => {
         res.send(result)
     })
 })
-
-
 
 Routers.post("/Languages/English/api/insert", (req, res) => {
 
@@ -18,8 +15,6 @@ Routers.post("/Languages/English/api/insert", (req, res) => {
 
     db.query('INSERT INTO posts (rb) VALUES (?)', [rb], (err, result) => {
         console.log(result)
-        //    console.log(err) 
-
     })
 })
 
@@ -29,6 +24,5 @@ Routers.delete("/Languages/English/api/delete/:rb", (req, res) => {
        if (err) console.log(err); 
     })
 })
-
 
 module.exports = Routers

@@ -1,5 +1,4 @@
 import React from 'react';
-//import './Navbar.css';
 import TranslateIcon from '@material-ui/icons/Translate';
 import HomeIcon from '@material-ui/icons/Home';
 import { IconButton } from '@material-ui/core';
@@ -30,7 +29,6 @@ const Navbar = () => {
 				</Link>
 			</div>
 		</div>
-
 	);
 };
 

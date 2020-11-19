@@ -10,8 +10,10 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 
 const MessageSender = ({ username, timestamp }) => {
+	
 	const [rb, setRb] = useState('');
 	const [rbList, setRbList] = useState([])
+
 	useEffect(() => {
 		Axios.get("http://localhost:3000/Languages/English/api/get").then((response) => {
 			setRbList(response.data)

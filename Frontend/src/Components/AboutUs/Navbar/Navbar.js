@@ -3,7 +3,6 @@ import './Navbar.css';
 import TranslateIcon from '@material-ui/icons/Translate';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-
 const Navbar = () => {
 	return (
 		<div className="header">

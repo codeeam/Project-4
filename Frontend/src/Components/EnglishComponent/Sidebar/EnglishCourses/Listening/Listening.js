@@ -3,6 +3,7 @@ import "../Grammer/Grammar";
 import ListeningNavbar from "./ListeningNavbar/ListeningNavbar";
 import "./Listening.css";
 export default function Grammer() {
+
   return (
     <div className="grammer">
       <ListeningNavbar />
@@ -11,7 +12,7 @@ export default function Grammer() {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="https://img-a.udemycdn.com/course/240x135/2503820_57bd.jpg?4WZoUK_fbUskC_Wie8KGMvj9rw_5ctWHIQITdoLVQfjxMmp3ZLjz9c316-2JplEzfU8HiF4JpPDpbkjytqHDNYUH1ZBX5-8cHR5QbHhpI65ow6lu6rdkbBg1eX-jGA" alt='course'/>
+                <img src="https://img-a.udemycdn.com/course/240x135/2503820_57bd.jpg?4WZoUK_fbUskC_Wie8KGMvj9rw_5ctWHIQITdoLVQfjxMmp3ZLjz9c316-2JplEzfU8HiF4JpPDpbkjytqHDNYUH1ZBX5-8cHR5QbHhpI65ow6lu6rdkbBg1eX-jGA" alt='course' />
                 <div className="headline">
                   <p>English Grammar & Pronunciation: Mastering If Sentences</p>
                 </div>
@@ -37,7 +38,7 @@ export default function Grammer() {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="https://img-a.udemycdn.com/course/240x135/2092594_1e73_5.jpg?Oh2oDuzs9EH0n9Nip5F3S2bffnloGazxzAmIU6DaxOm57n1YHzJN-JVbdwcG3TFuGGML38HxXQyHe4s1FRII9BTbfapfDN1k45UnMAXnyOvTIMF3fgZhbzOP58jfVYdo" alt='course'/>
+                <img src="https://img-a.udemycdn.com/course/240x135/2092594_1e73_5.jpg?Oh2oDuzs9EH0n9Nip5F3S2bffnloGazxzAmIU6DaxOm57n1YHzJN-JVbdwcG3TFuGGML38HxXQyHe4s1FRII9BTbfapfDN1k45UnMAXnyOvTIMF3fgZhbzOP58jfVYdo" alt='course' />
                 <div className="headline">
                   <p>English Grammar for Beginners</p>
                 </div>
@@ -60,7 +61,7 @@ export default function Grammer() {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhq_xr3iq9xSYh6TEI7fGKmY4BuiueP0Shw&usqp=CAU" alt='course'/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhq_xr3iq9xSYh6TEI7fGKmY4BuiueP0Shw&usqp=CAU" alt='course' />
                 <div className="headline">
                   <p>English Grammar \ The 12 Tenses</p>
                 </div>
@@ -85,7 +86,7 @@ export default function Grammer() {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="https://img-b.udemycdn.com/course/240x135/2203632_d419_2.jpg?secure=IfWOg3aMOjtr2i5ywvXFSQ%3D%3D%2C1605771977" alt='course'/>
+                <img src="https://img-b.udemycdn.com/course/240x135/2203632_d419_2.jpg?secure=IfWOg3aMOjtr2i5ywvXFSQ%3D%3D%2C1605771977" alt='course' />
                 <div className="headline">
                   <p>English Grammar | Learn English | Foundation Course</p>
                 </div>
@@ -111,14 +112,14 @@ export default function Grammer() {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="https://img-b.udemycdn.com/course/240x135/1173510_d729_7.jpg?secure=nc47jNtCxV382Wyp-UL9MA%3D%3D%2C1605771351" alt='course'/>
+                <img src="https://img-b.udemycdn.com/course/240x135/1173510_d729_7.jpg?secure=nc47jNtCxV382Wyp-UL9MA%3D%3D%2C1605771351" alt='course' />
                 <div className="headline">
                   <p>English Functional Grammar</p>
                 </div>
               </div>
               <div className="flip-card-back">
                 <p>
-                Improve your English communication with knowledge of functional grammar
+                  Improve your English communication with knowledge of functional grammar
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/english-functional-grammar/" style={{ textDecoration: "none" }}>
@@ -140,7 +141,7 @@ export default function Grammer() {
               </div>
               <div className="flip-card-back">
                 <p>
-                Essential English Grammar and Communication Skills for IELTS
+                  Essential English Grammar and Communication Skills for IELTS
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/mastering-the-the-present-tense-in-english/" style={{ textDecoration: "none" }}>
@@ -162,7 +163,7 @@ export default function Grammer() {
               </div>
               <div className="flip-card-back">
                 <p>
-                Learn the very basic concepts of English grammar with zero knowledge for beginners.
+                  Learn the very basic concepts of English grammar with zero knowledge for beginners.
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/english-grammar-learn-the-basics-of-english-grammar/" style={{ textDecoration: "none" }}>
@@ -177,14 +178,14 @@ export default function Grammer() {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="https://img-b.udemycdn.com/course/240x135/2006724_d2d1.jpg?secure=4EcmoIP96s6_bYstWr_Lkw%3D%3D%2C1605757614" alt='course'/>
+                <img src="https://img-b.udemycdn.com/course/240x135/2006724_d2d1.jpg?secure=4EcmoIP96s6_bYstWr_Lkw%3D%3D%2C1605757614" alt='course' />
                 <div className="headline">
                   <p>English Grammar: Sentence Structure</p>
                 </div>
               </div>
               <div className="flip-card-back">
                 <p>
-                In this course you will learn everything you need to give you a solid understanding of how sentences are structured in the English language.
+                  In this course you will learn everything you need to give you a solid understanding of how sentences are structured in the English language.
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/sentence-structure/" style={{ textDecoration: "none" }}>
@@ -199,14 +200,14 @@ export default function Grammer() {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src="https://img-a.udemycdn.com/course/240x135/3105358_b644_4.jpg?5x5FLPCkyxVRqx6RKskPURtPaLmgS7gOt38uplX9i8kONfpnfi7ZxS3nqstZdtGokK4H6reTvcG1bH8j-NhQGuKlrLbsDH-ebP6GTiJUcnDMZ_7ztyQtzQOP8aFlpazS" alt='course'/>
+                <img src="https://img-a.udemycdn.com/course/240x135/3105358_b644_4.jpg?5x5FLPCkyxVRqx6RKskPURtPaLmgS7gOt38uplX9i8kONfpnfi7ZxS3nqstZdtGokK4H6reTvcG1bH8j-NhQGuKlrLbsDH-ebP6GTiJUcnDMZ_7ztyQtzQOP8aFlpazS" alt='course' />
                 <div className="headline">
                   <p>Everyday Grammar Hacks</p>
                 </div>
               </div>
               <div className="flip-card-back">
                 <p>
-                In just 30 minutes, learn the parts of speech and improve your writing skills. Plus, get more than 20 resources that you can keep for future reference.
+                  In just 30 minutes, learn the parts of speech and improve your writing skills. Plus, get more than 20 resources that you can keep for future reference.
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/everyday-grammar-hacks/" style={{ textDecoration: "none" }}>

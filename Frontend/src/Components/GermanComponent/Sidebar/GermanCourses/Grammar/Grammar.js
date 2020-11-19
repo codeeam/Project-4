@@ -117,7 +117,7 @@ export default function Grammar() {
               </div>
               <div className="flip-card-back">
                 <p>
-                Improve your English communication with knowledge of functional grammar
+                  Improve your English communication with knowledge of functional grammar
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/english-functional-grammar/" style={{ textDecoration: "none" }}>
@@ -139,7 +139,7 @@ export default function Grammar() {
               </div>
               <div className="flip-card-back">
                 <p>
-                Essential English Grammar and Communication Skills for IELTS
+                  Essential English Grammar and Communication Skills for IELTS
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/mastering-the-the-present-tense-in-english/" style={{ textDecoration: "none" }}>
@@ -161,7 +161,7 @@ export default function Grammar() {
               </div>
               <div className="flip-card-back">
                 <p>
-                Learn the very basic concepts of English grammar with zero knowledge for beginners.
+                  Learn the very basic concepts of English grammar with zero knowledge for beginners.
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/english-grammar-learn-the-basics-of-english-grammar/" style={{ textDecoration: "none" }}>
@@ -183,7 +183,7 @@ export default function Grammar() {
               </div>
               <div className="flip-card-back">
                 <p>
-                In this course you will learn everything you need to give you a solid understanding of how sentences are structured in the English language.
+                  In this course you will learn everything you need to give you a solid understanding of how sentences are structured in the English language.
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/sentence-structure/" style={{ textDecoration: "none" }}>
@@ -205,7 +205,7 @@ export default function Grammar() {
               </div>
               <div className="flip-card-back">
                 <p>
-                In just 30 minutes, learn the parts of speech and improve your writing skills. Plus, get more than 20 resources that you can keep for future reference.
+                  In just 30 minutes, learn the parts of speech and improve your writing skills. Plus, get more than 20 resources that you can keep for future reference.
                 </p>
                 <div className="course-link">
                   <a href="https://www.udemy.com/course/everyday-grammar-hacks/" style={{ textDecoration: "none" }}>

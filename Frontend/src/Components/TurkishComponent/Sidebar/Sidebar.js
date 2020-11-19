@@ -12,12 +12,12 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <h1>Turkish Courses</h1>
-	    <Link Link to="/Languages/Turkish/Grammar" style={{ textDecoration: 'none' ,color: "black" }}><SidebarRow Icon={EmojiFlagsIcon} title="Dilbilgisi"/></Link>
+      <Link Link to="/Languages/Turkish/Grammar" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={EmojiFlagsIcon} title="Dilbilgisi" /></Link>
       <Link Link to="/Languages/Turkish/Listening" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={HearingIcon} title="Dinleme" /></Link>
       <Link Link to="/Languages/Turkish/Reading" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={BookIcon} title="Okuma" /></Link>
       <Link Link to="/Languages/Turkish/Writing" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={CreateIcon} title="yazı" /></Link>
-      <Link Link to="/Languages/Turkish/Speaking" style={{ textDecoration: 'none' ,color: "black" }}><SidebarRow Icon={RecordVoiceOverIcon} title="Konuşuyorum" /></Link>
-    </div> 
+      <Link Link to="/Languages/Turkish/Speaking" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={RecordVoiceOverIcon} title="Konuşuyorum" /></Link>
+    </div>
   );
 };
 

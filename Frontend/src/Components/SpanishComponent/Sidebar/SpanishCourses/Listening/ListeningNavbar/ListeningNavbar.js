@@ -10,7 +10,7 @@ const Navbar = () => {
         <TranslateIcon style={{ fontSize: 50, color: "#2e81f4" }} />
       </div>
       <div className="header__center">
-        <header style={{fontSize:"24px"}}>English Grammar Courses</header>
+        <header style={{ fontSize: "24px" }}>English Grammar Courses</header>
         <div className="header__option">
           <HomeIcon fontSize="large" />
         </div>

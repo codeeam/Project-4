@@ -11,7 +11,7 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Navbar = () => {
-	// const chatBoutton = () => { }
+
 	return (
 		<div className="header">
 			<div className="header__left">
@@ -36,20 +36,13 @@ const Navbar = () => {
 				</Link>
 			</div>
 			<div className="header__right">
-
 				<Link to="/">
 					<IconButton>
-
 						<ExitToAppIcon fontSize="large" style={{ color: '#2e81f4' }} />
 					</IconButton>
 				</Link>
 			</div>
-
-
-
-
 		</div>
-
 	);
 };
 

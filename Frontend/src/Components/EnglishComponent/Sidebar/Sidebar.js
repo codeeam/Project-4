@@ -12,12 +12,12 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <h1>English Courses</h1>
-	    <Link Link to="/Languages/English/Grammar" style={{ textDecoration: 'none' ,color: "black" }}><SidebarRow Icon={EmojiFlagsIcon} title="Grammar"/></Link>
+      <Link Link to="/Languages/English/Grammar" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={EmojiFlagsIcon} title="Grammar" /></Link>
       <Link Link to="/Languages/English/Listening" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={HearingIcon} title="Listening" /></Link>
       <Link Link to="/Languages/English/Reading" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={BookIcon} title="Reading" /></Link>
       <Link Link to="/Languages/English/Writing" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={CreateIcon} title="Writing" /></Link>
-      <Link Link to="/Languages/English/Speaking" style={{ textDecoration: 'none' ,color: "black" }}><SidebarRow Icon={RecordVoiceOverIcon} title="Speaking" /></Link>
-    </div> 
+      <Link Link to="/Languages/English/Speaking" style={{ textDecoration: 'none', color: "black" }}><SidebarRow Icon={RecordVoiceOverIcon} title="Speaking" /></Link>
+    </div>
   );
 };
 
