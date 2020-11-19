@@ -22,7 +22,7 @@ exports.login = (req, res) =>
   const username = req.body.username;
   const password = req.body.password;
 
-  db.query('SELECT * FROM users WHERE username = ?', [username], (err, result) =>
+  db.query('SELECT * FROM user WHERE username = ?', [username], (err, result) =>
   {
     if (err) {
       res.send({ err: err });
