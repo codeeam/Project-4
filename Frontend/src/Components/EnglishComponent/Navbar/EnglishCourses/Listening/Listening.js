@@ -1,4 +1,6 @@
 import React from "react";
+import GrammerNavbar from "../Grammer/GrammerNavbar/GrammerNavbar";
+import "../Grammer/Grammer";
 import GrammerNavbar from "./ListeningNavbar/ListeningNavbar";
 import "./Listening.css";
 export default function Grammer() {

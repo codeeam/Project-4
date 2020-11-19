@@ -1,4 +1,3 @@
-
 import { Avatar, IconButton } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import './MessageSender.css';
@@ -7,14 +6,12 @@ import './Post.css';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 import EditIcon from '@material-ui/icons/Edit';
-​
-​
-​
-​
+import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
+import PostAddIcon from '@material-ui/icons/PostAdd';
+
 const MessageSender = ({ username, timestamp }) => {
 	const [rb, setRb] = useState('');
 	const [rbList, setRbList] = useState([])
-​
 	useEffect(() => {
 		Axios.get("http://localhost:3000/Languages/English/api/get").then((response) => {
 			setRbList(response.data)
@@ -34,7 +31,10 @@ const MessageSender = ({ username, timestamp }) => {
 				// console.log(response)
 			});
 	}
-​
+	const deletePost = (postDelet) => {
+		Axios.delete(`http://localhost:3000/Languages/English/api/delete/${postDelet}`);
+	}
+
 	return (
 		<div>
 			<div className="messageSender">
@@ -48,31 +48,37 @@ const MessageSender = ({ username, timestamp }) => {
 							placeholder="what's on your mind ?"
 							value={rb}
 							onChange={(e) => setRb(e.target.value)}
-​
 						/>
 					</form>
-					<button onClick={postReq}>Post</button>
+					{/* <button > </button> */}
+					<IconButton>
+						<PostAddIcon fontSize='large' onClick={postReq} />
+					</IconButton>
 				</div>
 			</div>
-​
 			{
 				rbList.map((val) => {
-​
-​
 					return <div className="post">
 						<div className="post__top">
 							<Avatar className="post__avatar" />
 							<div className="post__topInfo">
 								<h3>{username}</h3>
+								<p>{new Date(parseInt(timestamp)).toUTCString()}</p>
 								<IconButton>
 									<EditIcon  margin />
 								</IconButton>
 								<p>{new Date(parseInt(timestamp)).toUTCString()}</p>
-​
 							</div>
+							<input type="text" />
+							<IconButton >
+								<EditIcon />
+							</IconButton>
+
+							<IconButton className='deleteOutlineIcon'>
+								<DeleteOutlineIcon  onClick={() => { deletePost(val.rb) }} />
+							</IconButton>
 						</div>
 						<div key={val.rb} className="post__bottom">
-​
 							{val.rb}
 							{/*image is coming later*/}
 						</div>
@@ -82,29 +88,17 @@ const MessageSender = ({ username, timestamp }) => {
 							}} className="post__option">
 								<ThumbUpIcon
 									id="likeButton"
-​
 								/>
-​
 								<p> {val.likes} </p>
 							</div>
-​
-​
 							<div className="post__option">
 								<ChatBubbleOutlineIcon />
 								<p>Comment</p>
 							</div>
-​
-​
-​
 						</div>
 					</div>
-​
 				})
 			}
-​
-​
-​
-​
 		</div>
 	);
 }
