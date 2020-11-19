@@ -1,10 +1,13 @@
-import { Avatar } from '@material-ui/core';
+import { Avatar, IconButton } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import './MessageSender.css';
 import Axios from 'axios'
 import './Post.css';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
+import EditIcon from '@material-ui/icons/Edit';
+import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
+import PostAddIcon from '@material-ui/icons/PostAdd';
 
 
 
@@ -32,6 +35,9 @@ const MessageSender = ({ username, timestamp }) => {
 				// console.log(response)
 			});
 	}
+	const deletePost = (postDelet) => {
+		Axios.delete(`http://localhost:3000/Languages/English/api/delete/${postDelet}`);
+	}
 
 	return (
 		<div>
@@ -49,7 +55,10 @@ const MessageSender = ({ username, timestamp }) => {
 
 						/>
 					</form>
-					<button onClick={postReq}>Post</button>
+					{/* <button > </button> */}
+					<IconButton>
+						<PostAddIcon fontSize='large' onClick={postReq} />
+					</IconButton>
 				</div>
 			</div>
 
@@ -62,8 +71,19 @@ const MessageSender = ({ username, timestamp }) => {
 							<Avatar className="post__avatar" />
 							<div className="post__topInfo">
 								<h3>{username}</h3>
+
 								<p>{new Date(parseInt(timestamp)).toUTCString()}</p>
+
 							</div>
+
+							<input type="text" />
+							<IconButton >
+								<EditIcon />
+							</IconButton>
+
+							<IconButton className='deleteOutlineIcon'>
+								<DeleteOutlineIcon  onClick={() => { deletePost(val.rb) }} />
+							</IconButton>
 						</div>
 						<div key={val.rb} className="post__bottom">
 
