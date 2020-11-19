@@ -1,17 +1,18 @@
 
 import axios from 'axios'
 import './Contact.css'
+import AddIcCallIcon from '@material-ui/icons/AddIcCall';
+import EmailIcon from '@material-ui/icons/Email';
 import {useState} from 'react'
 import Navbar from './Navbar'
 
 
        function Contact() {
 
-
-           const {FullName , setFullName}= useState("");
-           const {PhoneNumber , setPhoneNumber} = useState(0);
-           const{Email , setEmail} = useState("");
-           const{Message , setMessage} = useState("");
+           const [FullName , setFullName]= useState("");
+           const [PhoneNumber , setPhoneNumber] = useState(0);
+           const [Email , setEmail] = useState("");
+           const [Message , setMessage] = useState("");
        
 
 
@@ -28,8 +29,20 @@ import Navbar from './Navbar'
           
         <div> 
             <Navbar/>
-           <div> <h1 className='header'> Contact Us </h1></div>
-        
+           <div className='field'> <h1 className='header'> Contact Us </h1></div>
+             <div classNam='codeeam'>
+             <div >
+                 <h4> Codeeam comunity team welcomes you in our website</h4>
+                 <p> and we wish you a pleasant time </p>
+                 <p> We are happy to Contact Us.</p>
+             </div>
+             </div>
+             
+             <div className='information'>  
+                 <h3>  Contact Information </h3>
+                 <p > <AddIcCallIcon/> Phone Number : +962-786025324 </p>
+                 <p> <EmailIcon/> Email : Codeeam@gmail.com</p>
+             </div>
 
             <div className='contact-form'>
                 <h3> Get in touch</h3>
@@ -39,7 +52,7 @@ import Navbar from './Navbar'
                     }} />
                 </div>
                 <div className='text'> <label> Phone Number</label> <input type='number' placeholder='Enter your phone number' onChange={(event)=>{
-                    setFullName(event.target.value)}}/> 
+                    setPhoneNumber(event.target.value)}}/> 
                 </div>
            <div className='text'>
                <label>Email</label><input type='text' placeholder='Enter your email ' onChange={(event)=>{
