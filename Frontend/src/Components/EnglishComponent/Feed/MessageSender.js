@@ -9,7 +9,9 @@ import PostAddIcon from '@material-ui/icons/PostAdd';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 
-const MessageSender = ({ username }) => {
+const MessageSender = () => {
+    const [username, setUsername] = useState("");
+
 	const [rb, setRb] = useState('');
 	const [rbList, setRbList] = useState([])
 	const timestamp = Date.now();
@@ -63,7 +65,7 @@ const MessageSender = ({ username }) => {
 						<div className="post__top">
 							<Avatar className="post__avatar" />
 							<div className="post__topInfo">
-								<h3>{username}</h3>
+								<h3 onChange={(e)=> setUsername(e.target.value)}>{username}</h3>
 								<p>{new Date(parseInt(timestamp)).toUTCString()}</p>
 
 
