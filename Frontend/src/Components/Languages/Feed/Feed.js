@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Feed.css'
 
 
@@ -15,29 +15,39 @@ function App() {
             </Link>
           </div>
           <div className="column">
-            <div className="card">
-              <h3>France </h3>
-            </div>
+            <Link to="/Languages/French" style={{ textDecoration: 'none' }} className="/Languages/French">
+              <div className="card">
+              <h3>French</h3>
+              </div>
+            </Link>
           </div>
-          <div className="column">
-            <div className="card">
-              <h3>Spanish</h3>           
-            </div>
+        <div className="column">
+          <Link to="/Languages/Spanish" style={{ textDecoration: 'none' }} className="/Languages/Spanish">
+              <div className="card">
+              <h3>Spanish</h3>
+              </div>
+            </Link>
           </div>
-          <div className="column">
-            <div className="card">
-              <h3>Turkish</h3>            
-            </div>
+        <div className="column">
+            <Link to="/Languages/Turkish" style={{ textDecoration: 'none' }} className="/Languages/Turkish">
+              <div className="card">
+              <h3>Turkish</h3>
+              </div>
+            </Link>
           </div>
-          <div className="column">
-            <div className="card">
-              <h3>German </h3>             
-            </div>
+        <div className="column">
+           <Link to="/Languages/German" style={{ textDecoration: 'none' }} className="/Languages/German">
+              <div className="card">
+              <h3>German</h3>
+              </div>
+            </Link>
           </div>
-          <div className="column">
-            <div className="card">
-              <h3>Chinese</h3>             
-            </div>
+        <div className="column">
+            <Link to="/Languages/Chinese" style={{ textDecoration: 'none' }} className="/Languages/Chinese">
+              <div className="card">
+              <h3>Chinese</h3>
+              </div>
+            </Link>
           </div>
           </div>
         </div>
