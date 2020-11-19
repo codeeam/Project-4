@@ -39,10 +39,7 @@ const Feed = () => {
                 </div>
             </div>
             <button onClick={register}>
-            
-                   
-                    (<Link className='signup' to='/' >Register</Link>)
-                
+                (<Link className='signup' to='/' >Register</Link>)
             </button>
 
         </div>

@@ -4,11 +4,9 @@ const jwt = require('jsonwebtoken');
 const { isAuth, isLoggedIn, login } = require('./../../controllers/Login/loginController');
 require("dotenv").config();
 
-
 const verifyJWT = (req, res, next) =>
 {
     const token = req.headers['x-access-token'];
-  
     if (!token) {
         res.send('we need a token');
     } else {
@@ -25,9 +23,7 @@ const verifyJWT = (req, res, next) =>
 };
 
 router.get('/isUserAuth', verifyJWT, isAuth)
-
 router.get('/login', isLoggedIn)
-
 router.post('/login', login);
 
 module.exports = router;

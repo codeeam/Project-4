@@ -5,17 +5,16 @@ import Feed from '../../Components/TurkishComponent/Feed/Feed';
 import Sidebar from '../../Components/TurkishComponent/Sidebar/Sidebar';
 import Footer from '../../Components/TurkishComponent/Footer/Footer';
 
-
 const Turkish = () => {
-	return (	
-			<div className="turkish">
-				<Navbar />
-				<div className="turkish__body">
-					<Sidebar />
-					<Feed />
-				</div>
-				<Footer />
-			</div>	
+	return (
+		<div className="turkish">
+			<Navbar />
+			<div className="turkish__body">
+				<Sidebar />
+				<Feed />
+			</div>
+			<Footer />
+		</div>
 	);
 };
 

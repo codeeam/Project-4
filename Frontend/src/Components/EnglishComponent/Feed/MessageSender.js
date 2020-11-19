@@ -10,8 +10,8 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 
 const MessageSender = () => {
-    const [username, setUsername] = useState("");
 
+	const [username, setUsername] = useState("");
 	const [rb, setRb] = useState('');
 	const [rbList, setRbList] = useState([])
 	const timestamp = Date.now();
@@ -32,7 +32,6 @@ const MessageSender = () => {
 				userLikeing: localStorage.getItem("username"),
 				postid: id
 			}).then((response) => {
-				// console.log(response)
 			});
 	}
 	const deletePost = (postDelet) => {
@@ -65,17 +64,12 @@ const MessageSender = () => {
 						<div className="post__top">
 							<Avatar className="post__avatar" />
 							<div className="post__topInfo">
-								<h3 onChange={(e)=> setUsername(e.target.value)}>{username}</h3>
+								<h3 onChange={(e) => setUsername(e.target.value)}>{username}</h3>
 								<p>{new Date(parseInt(timestamp)).toUTCString()}</p>
-
-
 							</div>
-
-
 							<IconButton className='deleteOutlineIcon'>
 								<DeleteOutlineIcon onClick={() => { deletePost(val.rb) }} />
 							</IconButton>
-
 						</div>
 						<div key={val.rb} className="post__bottom">
 							{val.rb}

@@ -16,7 +16,6 @@ exports.isLoggedIn = (req, res) =>
   }
 };
 
-
 exports.login = (req, res) =>
 {
   const username = req.body.username;

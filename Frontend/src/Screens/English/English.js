@@ -5,17 +5,16 @@ import Feed from './../../Components/EnglishComponent/Feed/Feed';
 import Sidebar from './../../Components/EnglishComponent/Sidebar/Sidebar';
 import Footer from './../../Components/EnglishComponent/Footer/Footer';
 
-
 const English = () => {
-	return (	
-			<div className="english">
-				<Navbar />
-				<div className="english__body">
-					<Sidebar />
-					<Feed />
-				</div>
-				<Footer />
-			</div>	
+	return (
+		<div className="english">
+			<Navbar />
+			<div className="english__body">
+				<Sidebar />
+				<Feed />
+			</div>
+			<Footer />
+		</div>
 	);
 };
 

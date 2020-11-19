@@ -6,11 +6,9 @@ import Axios from 'axios'
 const Feed = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-
     const [loginStatus, setLoginStatus] = useState(false);
 
     Axios.defaults.withCredentials = true;
-
 
     const login = () => {
         Axios.post('http://localhost:3000/login', { username: username, password: password }).then((response) => {
@@ -44,7 +42,6 @@ const Feed = () => {
         })
     }, [])
 
-
     return (
         <div className="containar">
             <div className="head">
@@ -62,7 +59,6 @@ const Feed = () => {
                     </div>
                 </div>
             </div>
-
             <button className='signup' onClick={login}>login
             {
                     loginStatus &&

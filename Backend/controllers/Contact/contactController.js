@@ -1,12 +1,9 @@
 const mysql = require('./../../database')
 
-
 const getAllUser=(req , res)=>{
     console.log('User Usrs')
     res.json('i will send the message wait!')
 }
-
-
 const addMessage=(req , res)=>{
 const emp = req.body
 console.log('REQ.BODY' , req.body)

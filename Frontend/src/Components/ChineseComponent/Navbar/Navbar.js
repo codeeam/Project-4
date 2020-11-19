@@ -10,7 +10,7 @@ import ChatIcon from '@material-ui/icons/Chat';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Navbar = () => {
-	// const chatBoutton = () => { }
+
 	return (
 		<div className="header">
 			<div className="header__left">
@@ -38,15 +38,12 @@ const Navbar = () => {
 				</IconButton>
 			</div>
 
-
 			<Link to="/joinChat">
 				<IconButton>
 					<ChatIcon fontSize="large" style={{ color: '#2e81f4' }} />
 				</IconButton>
 			</Link>
-
 		</div>
-
 	);
 };
 

@@ -27,7 +27,7 @@ const MessageSender = ({ username }) => {
 				userLikeing: localStorage.getItem("username"),
 				postid: id
 			}).then((response) => {
-				// console.log(response)
+
 			});
 	}
 	const deletePost = (postDelet) => {
@@ -35,7 +35,7 @@ const MessageSender = ({ username }) => {
 	}
 	//Start timestamp
 	const timestamp = Date.now();
-	
+
 	//End timestamp
 	return (
 		<div>

@@ -1,5 +1,4 @@
 import React from 'react';
-// import MessageSender from './MessageSender';
 import MessageSender from './MessageSender'
 
 const Feed = () => {

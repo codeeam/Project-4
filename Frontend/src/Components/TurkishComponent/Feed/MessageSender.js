@@ -28,7 +28,6 @@ const MessageSender = ({ username, timestamp }) => {
 				userLikeing: localStorage.getItem("username"),
 				postid: id
 			}).then((response) => {
-				// console.log(response)
 			});
 	}
 	const deletePost = (postDelet) => {
@@ -51,7 +50,7 @@ const MessageSender = ({ username, timestamp }) => {
 						/>
 					</form>
 					<IconButton onClick={postReq}>
-						<PostAddIcon fontSize='large'/>
+						<PostAddIcon fontSize='large' />
 					</IconButton>
 				</div>
 			</div>
@@ -64,7 +63,7 @@ const MessageSender = ({ username, timestamp }) => {
 								<h3>{username}</h3>
 								<p>{new Date(parseInt(timestamp)).toUTCString()}</p>
 								<IconButton>
-									<EditIcon  margin />
+									<EditIcon margin />
 								</IconButton>
 								<p>{new Date(parseInt(timestamp)).toUTCString()}</p>
 							</div>
@@ -74,7 +73,7 @@ const MessageSender = ({ username, timestamp }) => {
 							</IconButton>
 
 							<IconButton className='deleteOutlineIcon'>
-								<DeleteOutlineIcon  onClick={() => { deletePost(val.rb) }} />
+								<DeleteOutlineIcon onClick={() => { deletePost(val.rb) }} />
 							</IconButton>
 						</div>
 						<div key={val.rb} className="post__bottom">

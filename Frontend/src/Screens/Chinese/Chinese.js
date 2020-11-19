@@ -5,17 +5,16 @@ import Feed from '../../Components/ChineseComponent/Feed/Feed';
 import Sidebar from '../../Components/ChineseComponent/Sidebar/Sidebar';
 import Footer from '../../Components/ChineseComponent/Footer/Footer';
 
-
 const Chinese = () => {
-	return (	
-			<div className="chinese">
-				<Navbar />
-				<div className="chinese__body">
-					<Sidebar />
-					<Feed />
-				</div>
-				<Footer />
-			</div>	
+	return (
+		<div className="chinese">
+			<Navbar />
+			<div className="chinese__body">
+				<Sidebar />
+				<Feed />
+			</div>
+			<Footer />
+		</div>
 	);
 };
 
