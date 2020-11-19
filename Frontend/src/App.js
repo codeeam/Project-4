@@ -27,7 +27,7 @@ function App() {
       <Route path="/listening" exact component={Listening}/>
 
       <Route path="/joinChat" exact component={Join} />
-      <Route path="/chat" component={Chat} 
+      <Route path="/chat" component={Chat} />
     </Router>
   );
 }

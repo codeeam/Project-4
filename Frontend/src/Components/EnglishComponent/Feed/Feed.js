@@ -1,11 +1,11 @@
 import React from 'react';
-import MessageSender from './MessageSender';
+// import MessageSender from './MessageSender';
 import Post from './Post';
 
 const Feed = () => {
 	return (
 		<div className="feed">
-			<MessageSender />
+			{/* <MessageSender /> */}
 			<Post
 				message="Hello Wolrd"
 				timestamp="1601493943737"
