@@ -1,0 +1,29 @@
+.bottom-stuff {
+	position: relative;
+}
+
+.bottom {
+	position: fixed;
+	background: rgb(245, 244, 244);
+	color: #2e81f4;
+	width: 100%;
+	bottom: 0;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	z-index: 100;
+	box-shadow: 8px 6px 6px 6px rgba(80, 65, 212, 0.664);
+	padding-top: 9px;
+}
+
+.bottom .about-us {
+	padding-right: 10%;
+}
+
+.bottom .contact-us {
+	padding-left: 20px;
+}
+
+h3 {
+	color: #2e81f4;
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './English.css';
 import Navbar from '../../Components/EnglishComponent/Navbar/Navbar';
 import Feed from './../../Components/EnglishComponent/Feed/Feed';
