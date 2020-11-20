@@ -16,7 +16,7 @@ function Contact() {
     const { Message, setMessage } = useState("");
 
     const addMessage = () => {
-        axios.post("http://localhost:3000/contact-us",
+        axios.post("http://localhost:5000/contact-us",
             { Full_Name: FullName, Phone_Number: PhoneNumber, Email: Email, Message: Message }).then((responce) => {
                 console.log('sucessfully')
             })
@@ -39,7 +39,7 @@ function Contact() {
 
 
            const addMessage=()=>{
-               axios.post("http://localhost:3000/contact-us" ,
+               axios.post("http://localhost:5000/contact-us" ,
                 {Full_Name:FullName , Phone_Number:PhoneNumber , Email:Email  , Message:Message}).then((responce)=>{
                  console.log('sucessfully')
                 })
