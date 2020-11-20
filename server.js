@@ -11,7 +11,7 @@ const loginRouter = require('./Routers/Login/loginRoute');
 const signUpRouter = require('./Routers/SignUp/signUpRoute');
 const postRouters = require('./Routers/Post/RouterPost')
 const routerLike = require('./Routers/Post/RouterLike');
-const contactRouter =require('./Routers/Contact/ContactRouter')
+const contactRouter = require('./Routers/Contact/ContactRouter')
 const mysql = require('./database');
 const app = express();
 
@@ -44,11 +44,15 @@ app.use(postRouters);
 app.use(routerLike)
 app.use(contactRouter)
 
+app.get('/test', (req, res) => {
+    res.json("hello World")
+})
+
 // Start chat Sevrer
 const chatrouter = require('./Routers/Chat/chatRouter');
 
 app.use(chatrouter)
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const server = app.listen(PORT, () => console.log(`REVIEW at http://localhost:${PORT}`));
 const io = socketio(server)
 
