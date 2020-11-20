@@ -10,7 +10,7 @@ const Feed = () => {
     const [registerStatus, setRegisterStatus] = useState(false);
 
     const register = () => {
-        Axios.post('http://localhost:5000/register', { username: usernameReg, password: passwordReg }).then((response) => {
+        Axios.post('/register', { username: usernameReg, password: passwordReg }).then((response) => {
             if (!response.data.auth) {
                 setRegisterStatus(false);
             } else {

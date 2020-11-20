@@ -11,7 +11,7 @@ const Feed = () => {
     Axios.defaults.withCredentials = true;
 
     const login = () => {
-        Axios.post('http://localhost:5000/login', { username: username, password: password }).then((response) => {
+        Axios.post('/login', { username: username, password: password }).then((response) => {
 
             if (!response.data.auth) {
                 setLoginStatus(false);
@@ -24,7 +24,7 @@ const Feed = () => {
     };
 
     const userAuth = () => {
-        Axios.get('http://localhost:5000/isUserAuth', {
+        Axios.get('/isUserAuth', {
             headers: {
                 "x-access-token": localStorage.getItem("token")
             }
@@ -34,7 +34,7 @@ const Feed = () => {
     }
 
     useEffect(() => {
-        Axios.get('http://localhost:5000/login').then((response) => {
+        Axios.get('/login').then((response) => {
             if (response.data.loggedIn === true) {
                 setLoginStatus(response.data.user[0].username)
             }

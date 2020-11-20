@@ -17,17 +17,17 @@ const MessageSender = () => {
 	const timestamp = Date.now();
 
 	useEffect(() => {
-		Axios.get("http://localhost:5000/Languages/English/api/get").then((response) => {
+		Axios.get("/Languages/English/api/get").then((response) => {
 			setRbList(response.data)
 		})
 	})
 	const postReq = () => {
-		Axios.post("http://localhost:5000/Languages/English/api/insert",
+		Axios.post("/Languages/English/api/insert",
 			{ rb: rb }
 		)
 	};
 	const likePost = (id) => {
-		Axios.post("http://localhost:5000/Languages/English/api/like",
+		Axios.post("/Languages/English/api/like",
 			{
 				userLikeing: localStorage.getItem("username"),
 				postid: id
@@ -35,7 +35,7 @@ const MessageSender = () => {
 			});
 	}
 	const deletePost = (postDelet) => {
-		Axios.delete(`http://localhost:5000/Languages/English/api/delete/${postDelet}`);
+		Axios.delete(`/Languages/English/api/delete/${postDelet}`);
 	}
 
 	return (
