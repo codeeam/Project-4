@@ -14,7 +14,8 @@ const routerLike = require('./Routers/Post/RouterLike');
 const contactRouter = require('./Routers/Contact/ContactRouter')
 const mysql = require('./database');
 const app = express();
-
+const path = require('path'); 
+app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(cors({
     origin: ["http://localhost:3000"],
     methods: ['GET', 'POST'],
@@ -43,6 +44,7 @@ app.use(signUpRouter);
 app.use(postRouters);
 app.use(routerLike)
 app.use(contactRouter)
+
 
 app.get('/test', (req, res) => {
     res.json("hello World")
