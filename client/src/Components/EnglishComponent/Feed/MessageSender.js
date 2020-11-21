@@ -89,7 +89,7 @@ const MessageSender = () => {
 							</div>
 						</div>
 					</div>
-				})
+				}).reverse()
 			}
 		</div>
 	);

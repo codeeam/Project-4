@@ -46,9 +46,9 @@ app.use(routerLike)
 app.use(contactRouter)
 
 
-// app.get('/test', (req, res) => {
-//     res.json("hello World")
-// })
+app.get('/test', (req, res) => {
+    res.json("hello World")
+})
 
 // Start chat Sevrer
 const chatrouter = require('./Routers/Chat/chatRouter');
